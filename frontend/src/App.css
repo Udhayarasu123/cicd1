@@ -1,32 +1,35 @@
-import "./App.css";
-
-function App() {
-  return (
-    <div className="container">
-
-      <div className="card">
-
-        <h1>🚀 CI/CD Auto Deployment App</h1>
-
-        <p>
-          Successfully deployed using:
-        </p>
-
-        <ul>
-          <li>React JS</li>
-          <li>Docker</li>
-          <li>GitHub Actions</li>
-          <li>AWS EC2</li>
-        </ul>
-
-        <button>
-          Deployment Successful
-        </button>
-
-      </div>
-
-    </div>
-  );
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f172a;
 }
 
-export default App;
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  width: 400px;
+  text-align: center;
+  box-shadow: 0px 5px 20px rgba(0,0,0,0.3);
+}
+
+h1 {
+  color: #2563eb;
+}
+
+button {
+  margin-top: 25px;
+  padding: 12px 20px;
+  border: none;
+  background: #2563eb;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
