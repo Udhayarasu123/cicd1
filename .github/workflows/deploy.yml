@@ -6,7 +6,6 @@ on:
       - main
 
 jobs:
-
   deploy:
 
     runs-on: ubuntu-latest
@@ -26,7 +25,6 @@ jobs:
 
           script: |
             cd ~/deploy/cicd1/
-            git pull origin Main
+            git pull origin main
             docker-compose down
             docker-compose up --build -d
-
